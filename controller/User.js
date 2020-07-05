@@ -1,8 +1,6 @@
 const userModel = require('../model/User')
 const bcrypt = require('bcrypt')
 const { requestResponse } = require('../config')
-const objectId = require('mongoose').Types.ObjectId
-const { request } = require('express')
 
 exports.register = (data) =>
   new Promise((resolve, reject) => {
